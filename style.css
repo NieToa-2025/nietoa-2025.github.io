@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 🌼 General Styles */
+body {
+  background-color: hwb(110 43% 21%);
+  font-family: Arial, sans-serif;
+}
+
+/* 🎨 Page-specific background colors */
+.about-page {
+  background-color: hwb(110 43% 21%);
+}
+
+.contact-page {
+  background-color: hwb(110 43% 21%);
+}
+
+/* 🩷 Heading Styles */
+h1 {
+  color: #f306b8;
+  text-align: center;
+  font-size: 80px;
+  margin-bottom: 50px;
+}
+
+/* Paragraph Styles */
+p {
+  font-size: 22px;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* 🌐 Navigation Bar Styles */
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  background-color: #333;
+}
+
+nav ul li a {
+  color: white;
+  padding: 20px 25px;
+  text-decoration: none;
+  font-size: 35px;
+}
+
+nav ul li a:hover {
+  background-color: #575757;
+}
+
+/* Adds space below nav */
+nav {
+  margin-bottom: 40px;
+}
+
+/* Footer Style */
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  margin-top: 40px;
+}
+
+/* 📱 MOBILE RESPONSIVE SETTINGS */
+@media (max-width: 1024px) {
+
+  nav ul {
+    flex-direction: column;  /* stack menu vertically */
+    text-align: center;
+  }
+
+  nav ul li a {
+    font-size: 20px;   /* smaller menu text */
+    padding: 10px;     /* smaller buttons */
+  }
+
+  h1 {
+    font-size: 32px;   /* smaller heading */
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-size: 16px;   /* smaller paragraph */
+  }
+
+  img {
+    max-width: 100%;   /* image fits phone screen */
+    height: auto;
+  }
+
+  input,
+  textarea {
+    width: 90%;        /* form fields shrink */
+  }
+}
