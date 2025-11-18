@@ -4,99 +4,171 @@
   box-sizing: border-box;
 }
 
-/* 🌼 General Styles */
+/* --------------- BODY (keep your green) --------------- */
 body {
   background-color: hwb(110 43% 21%);
   font-family: Arial, sans-serif;
-}
-
-/* 🎨 Page-specific background colors */
-.about-page {
-  background-color: hwb(110 43% 21%);
-}
-
-.contact-page {
-  background-color: hwb(110 43% 21%);
-}
-
-/* 🩷 Heading Styles */
-h1 {
-  color: #f306b8;
   text-align: center;
-  font-size: 80px;
-  margin-bottom: 50px;
+  margin: 0;
 }
 
-/* Paragraph Styles */
-p {
-  font-size: 22px;
-  color: #333;
+/* --------------- MAIN CONTENT --------------- */
+.main-content {
+  margin: 30px auto;
+  max-width: 2000px;
+  padding: 20px;
   text-align: center;
-  margin-bottom: 20px;
 }
 
-/* 🌐 Navigation Bar Styles */
+/* Centered images inside main content, responsive */
+.main-content img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  margin: 0 auto;
+}
+/* Home page image size */
+.home-img {
+    width: 100%;       /* fills container */
+    max-width: 2000px; /* adjust as needed */
+    height: auto;      /* keeps proportions */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* --------------- NAVIGATION (Activity 4.1 Applied) --------------- */
 nav ul {
   display: flex;
   justify-content: center;
   list-style: none;
-  background-color: #333;
+  background-color: #333; /* as per activity */
+  padding: 10px 0;
+  margin: 0;
 }
 
 nav ul li a {
-  color: white;
-  padding: 20px 25px;
-  text-decoration: none;
-  font-size: 35px;
+  color: white;               /* as per activity */
+  padding: 10px 15px;         /* smaller height as activity */
+  text-decoration: none;      /* as per activity */
+  font-size: 36px;            /* slightly smaller to reduce bar height */
+  display: inline-block;
+  transition: background-color 0.2s ease;
 }
 
 nav ul li a:hover {
+  background-color: #575757;  /* hover effect as activity */
+}
+
+/* --------------- HEADINGS --------------- */
+h1 {
+  color: #f306b8;
+  font-size: 100px;
+  margin: 30px 0;
+}
+
+h2 {
+  color: #333;
+  font-size: 60px;
+  margin: 20px 0;
+}
+
+/* --------------- PARAGRAPHS --------------- */
+p {
+  font-size: 35px;
+  color: #333;
+  text-align: center;
+  margin: 30px 0;
+  line-height: 1.4;
+}
+
+/* --------------- LABELS & FORM --------------- */
+label {
+  font-size: 24px;
+  color: #333;
+  text-align: left;
+  display: block;
+  margin-bottom: 5px;
+}
+
+form {
+  margin: 20px 0;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 12px;
+  font-size: 20px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+}
+
+/* --------------- BUTTON --------------- */
+button {
+  padding: 12px 24px;
+  font-size: 22px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
   background-color: #575757;
 }
 
-/* Adds space below nav */
-nav {
-  margin-bottom: 40px;
-}
-
-/* Footer Style */
+/* --------------- FOOTER --------------- */
 footer {
   text-align: center;
-  padding: 10px;
+  padding: 15px;
   background-color: #333;
   color: white;
   margin-top: 40px;
+  font-size: 20px;
 }
 
-/* 📱 MOBILE RESPONSIVE SETTINGS */
-@media (max-width: 1024px) {
+/* --------------- RESPONSIVE --------------- */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 60px;
+  }
+
+  h2 {
+    font-size: 40px;
+  }
 
   nav ul {
-    flex-direction: column;  /* stack menu vertically */
-    text-align: center;
+    flex-direction: column;
   }
 
   nav ul li a {
-    font-size: 20px;   /* smaller menu text */
-    padding: 10px;     /* smaller buttons */
-  }
-
-  h1 {
-    font-size: 32px;   /* smaller heading */
-    margin-bottom: 20px;
+    font-size: 24px;
+    padding: 8px 12px;
   }
 
   p {
-    font-size: 16px;   /* smaller paragraph */
+    font-size: 24px;
   }
 
-  img {
-    max-width: 100%;   /* image fits phone screen */
-    height: auto;
+  .main-content img {
+    width: 100%;
+    max-width: 500px;
   }
 
-  input,
-  textarea {
-    width: 90%;        /* form fields shrink */
+  input, textarea {
+    font-size: 18px;
   }
+
+  button {
+    font-size: 20px;
+    width: 100%;
+  }
+
 }
