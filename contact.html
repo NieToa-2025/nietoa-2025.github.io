@@ -2,48 +2,87 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Contact - My Web Page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - DreamHomes Vanuatu</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="contact-page">
-    <!-- Page Heading -->
-    <h1>Contact Me</h1>
+<body>
+    <header class="site-header">
+        <div class="header-content">
+            <div class="logo-container">
+                <img src="images/logo.png" alt="DreamHomes Vanuatu Logo" class="logo">
+                <div class="welcome-text">Welcome to DreamHomes Vanuatu Website</div>
+            </div>
+        </div>
+    </header>
 
-    <!-- Navigation Bar - Following Activity 4.1 -->
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="properties.html">Properties</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
         </ul>
     </nav>
 
-    <!-- Main Content -->
-    <main class="main-content">
-        <h2>Contact Me</h2>
-        <p>You can email me directly at: <b>toaannrose@gmail.com</b></p>
-        <p>Or call me at: <b>+678 535 2590</b></p>
-        <p>Or use the form below to send me a message:</p>
+    <header>
+        <h1>Contact DreamHomes Vanuatu</h1>
+    </header>
 
-        <!-- Contact form -->
-        <form action="#" method="post">
-            <label for="name">Name:</label><br>
-            <input id="name" name="name" type="text" placeholder="Your name"><br><br>
+    <main>
+        <section class="contact-form">
+            <h2>Send Us a Message</h2>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+                
+                <div class="form-group">
+                    <label for="property">Property Interest:</label>
+                    <select id="property" name="property">
+                        <option value="">Select a property</option>
+                        <option value="ocean-villa">Ocean View Villa</option>
+                        <option value="beachfront">Beachfront Paradise</option>
+                        <option value="hillside">Hillside Retreat</option>
+                        <option value="garden-house">Tropical Garden House</option>
+                        <option value="penthouse">Luxury Penthouse</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" placeholder="Tell us about your property needs..." required></textarea>
+                </div>
+                
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </section>
 
-            <label for="email">Email:</label><br>
-            <input id="email" name="email" type="email" placeholder="your@email.com"><br><br>
-
-            <label for="message">Message:</label><br>
-            <textarea id="message" name="message" rows="6" placeholder="Write your message here"></textarea><br><br>
-
-            <button type="submit">Send</button>
-        </form>
+        <section class="contact-info">
+            <h2>Our Contact Details</h2>
+            <p><strong>Address:</strong> 123 Paradise Road, Port Vila, Vanuatu</p>
+            <p><strong>Phone:</strong> +678 123 4567</p>
+            <p><strong>Email:</strong> info@dreamhomesvanuatu.com</p>
+            <p><strong>Business Hours:</strong> Monday - Friday: 8:00 AM - 5:00 PM</p>
+        </section>
     </main>
 
-    <!-- Footer -->
     <footer>
-        &copy; 2025 Annie. All rights reserved.
+        <p>Contact us: info@dreamhomesvanuatu.com | +678 123 4567</p>
+        <p>&copy; 2024 DreamHomes Vanuatu. All rights reserved.</p>
     </footer>
 </body>
 </html>
